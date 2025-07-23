@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoluxe Website(car)</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper slide cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav bar START -->
+    <nav class="navbar">
+      <div class="logo">
+        <h2>
+          <a href="#"> <span>nombre</span>empresa</a>
+        </h2>
+      </div>
+      <ul class="menu-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="#">correo@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone-volume"></i>
+          <a href="#">+57 345 678 901</a>
+        </li>
+        <i class="fa-solid fa-bars" id="toggle"></i>
+      </ul>
+    </nav>
+    <!-- nav bar END -->
+    <!-- hero section START -->
+    <div class="hero section" id="inicio">
+      <div class="hero-left">
+        <div class="hero-title">
+          <h2>
+            <span id="text"> Tramites de transito </span><span>ágiles </span>y
+            <span>seguros</span>
+          </h2>
+          <div class="title-text">Premium</div>
+        </div>
+        <div class="car-details">
+          <h5>Panel de Trámites</h5>
+          <div class="car-details-main">
+            <ul class="car-models">
+              <li>
+                <img src="./image/car.png" alt="" />
+                <span>Car</span>
+              </li>
+              <li>
+                <img src="./image/van.png" alt="" />
+                <span>Van</span>
+              </li>
+              <li>
+                <img src="./image/coupe.png" alt="" />
+                <span>Coupe</span>
+              </li>
+              <li>
+                <img src="./image/bike.png" alt="" />
+                <span>Bike</span>
+              </li>
+            </ul>
+            <div class="contact-info">
+              <div class="input-head">
+                <div class="input-box">
+                  <label>Choose Vehical type</label>
+                  <select>
+                    <option id="value">Model</option>
+                    <option id="value">Yamaha</option>
+                    <option id="value">Honda</option>
+                    <option id="value">Suzuki</option>
+                  </select>
+                </div>
+                <div class="input-box">
+                  <label>Pick up Location</label>
+                  <input type="text" placeholder="type..." />
+                </div>
+                <div class="input-box">
+                  <label>Drag off Location</label>
+                  <input type="text" placeholder="type..." />
+                </div>
+              </div>
+              <div class="input-head">
+                <div class="input-box">
+                  <label>Pick up update and time</label>
+                  <div class="input-head">
+                    <div class="date">
+                      <input type="text" placeholder="Date" />
+                      <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="time">
+                      <input type="text" placeholder="Time" />
+                      <i class="fa-solid fa-clock"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-box">
+                  <label>Return date and time</label>
+                  <div class="input-head">
+                    <div class="date">
+                      <input type="text" placeholder="Date" />
+                      <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="time">
+                      <input type="text" placeholder="Time" />
+                      <i class="fa-solid fa-clock"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn">Search Your Ride</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-mercedes">
+          <div class="mercedes-price">
+            <div>¡Haz tu trámite VEHICULAR YA!</div>
+            <div><span>Cotiza tu tramite</span></div>
+          </div>
+        </div>
+        <img src="./image/car (1).png" alt="" id="hero-image" />
+      </div>
+    </div>
+    <!--hero section END -->
+    <!-- about section START -->
+    <div class="about section" id="nosotros">
+      <div class="about-image">
+        <img src="./image/abus-pic.jpg" alt="" />
+      </div>
+      <div class="about-title section-title">
+        <span class="span">Nuestra Experiencia</span>
+        <h3>Gestión de trámites de tránsito a nivel nacional</h3>
+        <p>
+          Nos destacamos por nuestra eficiencia y profesionalismo en la gestión
+          de trámites vehiculares. Desde licencias hasta matriculación, nuestro
+          equipo asesora con claridad y resuelve cada proceso de forma rápida y
+          sin complicaciones.
+        </p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Transparencia en costos y requisitos.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Atención personalizada y seguimiento oportuno.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Soluciones ágiles, incluso para casos complejos.</span>
+          </li>
+        </ul>
+        <button class="btn">Servicios</button>
+      </div>
+    </div>
+    <!-- about section END -->
+    <!-- our adventure section START -->
+    <div class="our-adventure section">
+      <div class="our-adventure-title section-title">
+        <span class="span">Tramites mas rápidos</span>
+        <h3>¿Por qué hacer tus trámites, con nosotros?</h3>
+      </div>
+      <div class="our-adventure-wrap">
+        <div class="our-adventure-card">
+          <div class="our-adventure-icon">
+            <img src="./image/label.png" alt="" />
+          </div>
+          <div class="our-adventure-info">
+            <h3>Rapidez</h3>
+            <p>
+              No matter your budget, we have the perfect deal for you. Enjoy
+              high-quality sevice and great value tailored yo your needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="our-adventure-card">
+          <div class="our-adventure-icon">
+            <img src="./image/customer-support.png" alt="" />
+          </div>
+          <div class="our-adventure-info">
+            <h3>Seguridad jurídica</h3>
+            <p>
+              From budget-friendly options to premium packages, we offer
+              something for everyone. Get
+            </p>
+          </div>
+        </div>
+
+        <div class="our-adventure-card">
+          <div class="our-adventure-icon">
+            <img src="./image/customer-support.png" alt="" />
+          </div>
+          <div class="our-adventure-info">
+            <h3>Asesoría personalizada</h3>
+            <p>
+              No matter your budget, we have the perfect deal for you. Enjoy
+              high-quality service
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our adventure section END -->
+    <!-- our feels section START -->
+    <div class="our-feels section" id="servicios">
+      <div class="our-feels-title section-title">
+        <span class="span">Nuestros servicios</span>
+        <h3>¿Como le podemos ayudar?</h3>
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Traspaso de Vehículo</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    Cambio de propietario de tu vehículo de forma rápida, segura
+                    y legal.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Levantamiento de Prenda</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    El levantamiento del mismo o su modificación. por parte de
+                    una entidad financiera.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Traslado Matricula & Registro</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    Movemos tu registro vehicular de una ciudad a otra, de forma
+                    legal.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Radicado Matrícula</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    Registramos tu vehículo en la ciudad donde circula
+                    habitualmente, cumpliendo con la normativa vigente.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Transformación</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    (Cambio de combustible a gas, desmontaje de carrocería y
+                    desmonte de gas) solicitado por propietario.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Duplicado Licencia de Tránsito</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    Duplicado de la última Licencia de Tránsito que posee el
+                    vehículo.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Inscripción Prenda</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    Historial físico y electrónico del vehículo un contrato de
+                    prenda.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Matrícula & Registro</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    Es la inscripción de un vehículo en plataforma runt y ciudad
+                    de tránsito.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="three-d-card">
+            <div class="card-wrapper">
+              <div class="card-face front">
+                <div class="card-content">
+                  <div class="card-title">Cambio de Color</div>
+                </div>
+              </div>
+              <div class="card-face back">
+                <div class="card-content">
+                  <div class="card-description">
+                    Gestión ante la autoridad correspondiente para actualizar
+                    los datos del vehículo en la tarjeta de circulación.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our feels section END -->
+    <!-- categories section START
+    <div class="categories section">
+      <div class="categories-title section-title">
+        <span class="span">Categories</span>
+        <h3>A lool At All Type Of Vehicles</h3>
+      </div>
+
+      <div class="swiper categories-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="categories-image">
+              <img src="./image/pic3.jpg" alt="" />
+              <span class="categories-text"> Hatchback </span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="categories-image">
+              <img src="./image/pic6.jpg" alt="" />
+              <span class="categories-text"> Coupe </span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="categories-image">
+              <img src="./image/pic8.jpg" alt="" />
+              <span class="categories-text"> Hybrid </span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="categories-image">
+              <img src="./image/pic13.jpg" alt="" />
+              <span class="categories-text"> SUV </span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="categories-image">
+              <img src="./image/pic8 (1).jpg" alt="" />
+              <span class="categories-text"> Sedan </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      categories section END -->
+    <!-- working section START -->
+    <div class="working section">
+      <div class="working-title section-title">
+        <span class="span">Nuestros logros</span>
+        <h3>Resultados obtenidos</h3>
+      </div>
+      <div class="working-wrap">
+        <div class="working-item">
+          <span>+70</span>
+          <div class="working-info">
+            <h4>Trámites Diarios</h4>
+            <p>Check out our range of cars and choose the car of your choice</p>
+          </div>
+        </div>
+
+        <div class="working-item">
+          <span>+10</span>
+          <div class="working-info">
+            <h4>Ciudades</h4>
+            <p>Check out our range of cars and choose the car of your choice</p>
+          </div>
+        </div>
+
+        <div class="working-item">
+          <span>+40</span>
+          <div class="working-info">
+            <h4>Convenios</h4>
+            <p>Check out our range of cars and choose the car of your choice</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      <div class="adv-cars">
+        <img src="./image/adv-car.png" alt="" id="adv-cars" />
+      </div>
+    </div>
+    <!-- working section END -->
+    <!-- testimonials section START --
+    <div class="testimonials section">
+      <div class="testimonials-title section-title">
+        <span class="span">Testimonials</span>
+        <h3>What Our Customers Say</h3>
+      </div>
+      <div class="swiper tst-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonials-item">
+              <div class="tst-top">
+                <img src="./image/pic1 (1).jpg" alt="" />
+                <h4>Kevin Martin <span>Customers</span></h4>
+              </div>
+              <p>
+                I Was Very Impresed Lorem posuere in miss and drana en the nisan
+                semere sceriun amiss etiam ornare in the miss drana is lorem
+                fermen mauris
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonials-item">
+              <div class="tst-top">
+                <img src="./image/pic2 (1).jpg" alt="" />
+                <h4>Devin Cullen <span>Customers</span></h4>
+              </div>
+              <p>
+                I Was Very Impresed Lorem posuere in miss and drana en the nisan
+                semere sceriun amiss etiam ornare in the miss drana is lorem
+                fermen mauris
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonials-item">
+              <div class="tst-top">
+                <img src="./image/pic3 (2).jpg" alt="" />
+                <h4>Piter Has <span>Customers</span></h4>
+              </div>
+              <p>
+                I Was Very Impresed Lorem posuere in miss and drana en the nisan
+                semere sceriun amiss etiam ornare in the miss drana is lorem
+                fermen mauris
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonials-item">
+              <div class="tst-top">
+                <img src="./image/pic1 (1).jpg" alt="" />
+                <h4>Kevin Martin <span>Customers</span></h4>
+              </div>
+              <p>
+                I Was Very Impresed Lorem posuere in miss and drana en the nisan
+                semere sceriun amiss etiam ornare in the miss drana is lorem
+                fermen mauris
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    !-- testimonials section END -->
+    <!-- blog section START --
+    <div class="blog section">
+      <div class="blog-title section-title">
+        <span class="span">From the blog</span>
+        <h3>Car And Bike Rental News</h3>
+      </div>
+      <div class="swiper blog-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <img src="./image/bg1.jpg" alt="" />
+              <div class="title">
+                <span>By Mike Hardson</span>
+                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <img src="./image/bg2.jpg" alt="" />
+              <div class="title">
+                <span>By David Culum</span>
+                <h3>
+                  The Ultimate Checklist for a Successful Car Rental Adventure
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <img src="./image/bg3.jpg" alt="" />
+              <div class="title">
+                <span>By Mike Hardson</span>
+                <h3>
+                  Tips for Renting the Perfect Car for Your Family Vacation
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <img src="./image/bg4.jpg" alt="" />
+              <div class="title">
+                <span>By Mike Hardson</span>
+                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <img src="./image/bg5.jpg" alt="" />
+              <div class="title">
+                <span>By Mike Hardson</span>
+                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="blog-item">
+              <img src="./image/bg6.jpg" alt="" />
+              <div class="title">
+                <span>By Mike Hardson</span>
+                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    !-- blog section END -->
+    <!-- footer section START -->
+    <footer class="section">
+      <div class="footer-wrap">
+        <div class="footer-left">
+          <div class="flogo logo">
+            <h2>
+              <a href="#"><span>Emp</span>resa</a>
+            </h2>
+          </div>
+          <p>
+            Nuestro equipo asesora con claridad y resuelve cada proceso de forma rápida y
+          sin complicaciones.
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>123 034 0334</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>correo@gmail.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <span>dirección</span>
+            </li>
+          </ul>
+          <ul class="social-icon">
+            <li>
+              <i class="fa-brands fa-x-twitter"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-pinterest-p"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <div class="footer-menu">
+            <div class="footer-col">
+              <h3>Horarios de atención</h3>
+              <ul>
+                <li>Lunes - Viernes: 09:00 AM - 07:00 PM</li>
+                <li>Sábados: 09:00 AM - 05:00 PM</li>
+                <li>Domingos: Cerrado</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>copyrights All Rights Reserved by <span>Programadores57</span></p>
+    </div>
+    <!-- footer section END -->
+
+    <!-- swiper slide cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Gsap CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- script js -->
+    <script src="./script.js"></script>
+    <script>
+      gsap.from(".logo", {
+        opacity: 0,
+        delay: 1,
+        x: 20,
+      });
+
+      gsap.from(menu.children, {
+        opacity: 0,
+        x: 0,
+        duration: 1,
+        delay: 1.5,
+        stagger: {
+          amount: 1,
+        },
+      });
+
+      const menu_right = document.querySelector(".nav-right");
+
+      gsap.from(menu_right.children, {
+        opacity: 0,
+        x: -30,
+        duration: 1,
+        delay: 1.5,
+        stagger: {
+          amount: 1,
+        },
+      });
+
+      gsap.from(".hero-title", {
+        opacity: 0,
+        delay: 2,
+        x: -50,
+      });
+
+      gsap.from(".car-details", {
+        opacity: 0,
+        delay: 2,
+        x: 20,
+      });
+
+      gsap.from("#hero-image", {
+        opacity: 0,
+        delay: 2.5,
+        scale: 0.5,
+        x: -30,
+      });
+
+      gsap.from(".hero-mercedes", {
+        opacity: 0,
+        delay: 2,
+      });
+    </script>
+  </body>
+</html>
