@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autoluxe Website(car)</title>
+    <title>DriveBototá</title>
     <!-- style css -->
     <link rel="stylesheet" href="./style.css" />
     <!-- font awesome cdn -->
@@ -28,7 +28,7 @@
     <nav class="navbar">
       <div class="logo">
         <h2>
-          <a href="#"> <span>nombre</span>empresa</a>
+          <a href="#"> <span>Drive</span>Bogotá</a>
         </h2>
       </div>
       <ul class="menu-list">
@@ -39,12 +39,8 @@
       </ul>
       <ul class="nav-right">
         <li>
-          <i class="fa-solid fa-envelope"></i>
-          <a href="#">correo@gmail.com</a>
-        </li>
-        <li>
           <i class="fa-solid fa-phone-volume"></i>
-          <a href="#">+57 345 678 901</a>
+          <a href="#">313 420 6149</a>
         </li>
         <i class="fa-solid fa-bars" id="toggle"></i>
       </ul>
@@ -62,7 +58,34 @@
         </div>
         <div class="car-details">
           <h5>Panel de Trámites</h5>
+          
           <div class="car-details-main">
+    
+            <form class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" id="nombre-cliente" required class="form-control" placeholder="Nombre">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="input-box">
+                <label>Tipo de tramite</label>
+                <select id="opcion" required>
+                  <option id="" disabled selected>Elija su tramite</option>
+                  <option id="licencia">Licencia de conducción</option>
+                  <option id="refrendacion">Refrendación</option>
+                  <option id="recategorizacion">Recategorización</option>
+                  <option id="cursos">Cursos de conducción</option>
+                </select>
+              </div>
+              
+              <button type="submit" id="btn-enviar" class="btn" onclick="enviarMensaje()">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <!--div class="car-details-main">
             <ul class="car-models">
               <li>
                 <img src="./image/car.png" alt="" />
@@ -132,7 +155,8 @@
               </div>
               <button class="btn">Search Your Ride</button>
             </div>
-          </div>
+          </div-->
+        
         </div>
       </div>
       <div class="hero-right">
@@ -174,7 +198,7 @@
             <span>Soluciones ágiles, incluso para casos complejos.</span>
           </li>
         </ul>
-        <button class="btn">Servicios</button>
+        <button class="btn"><a href="#servicios">Servicios</a></button>
       </div>
     </div>
     <!-- about section END -->
@@ -192,8 +216,7 @@
           <div class="our-adventure-info">
             <h3>Rapidez</h3>
             <p>
-              No matter your budget, we have the perfect deal for you. Enjoy
-              high-quality sevice and great value tailored yo your needs.
+              Agilizamos la validación o renovación de tu pase de conducción, evitando retrasos y multas. Te brindamos asesoría especializada para que tu trámite sea seguro y legal.
             </p>
           </div>
         </div>
@@ -205,8 +228,7 @@
           <div class="our-adventure-info">
             <h3>Seguridad jurídica</h3>
             <p>
-              From budget-friendly options to premium packages, we offer
-              something for everyone. Get
+              Capacítate con expertos y obtén tu licencia más rápido. Nuestros cursos son prácticos, personalizados y enfocados en las normas vigentes.
             </p>
           </div>
         </div>
@@ -218,8 +240,7 @@
           <div class="our-adventure-info">
             <h3>Asesoría personalizada</h3>
             <p>
-              No matter your budget, we have the perfect deal for you. Enjoy
-              high-quality service
+              Te guiamos paso a paso, garantizando que el proceso cumpla con la ley y se ajuste a tus necesidades. Rapidez en trámites y respaldo legal para que manejes sin preocupaciones.
             </p>
           </div>
         </div>
@@ -238,15 +259,15 @@
             <div class="card-wrapper">
               <div class="card-face front">
                 <div class="card-content">
-                  <div class="card-title">Traspaso de Vehículo</div>
+                  <div class="card-title">Licencias de conducción</div>
                 </div>
               </div>
               <div class="card-face back">
                 <div class="card-content">
                   <div class="card-description">
-                    Cambio de propietario de tu vehículo de forma rápida, segura
-                    y legal.
+                    Trámite para obtener por primera vez o renovar la licencia de conducir. 
                   </div>
+                  <button class="btn cardbtn"><a href="https://wa.me/573116516129?text=Hola%20quiero%20más%20información%20de%20licencias%20de%20conducción" target="_blank">Más información</a></button>
                 </div>
               </div>
             </div>
@@ -256,15 +277,15 @@
             <div class="card-wrapper">
               <div class="card-face front">
                 <div class="card-content">
-                  <div class="card-title">Levantamiento de Prenda</div>
+                  <div class="card-title">Refrendación</div>
                 </div>
               </div>
               <div class="card-face back">
                 <div class="card-content">
                   <div class="card-description">
-                    El levantamiento del mismo o su modificación. por parte de
-                    una entidad financiera.
+                    Renovación o validación del pase de conducción, asegurando que cumpla con los requisitos exigidos por la normativa vial.
                   </div>
+                  <button class="btn cardbtn"><a href="https://wa.me/573116516129?text=Hola%20quiero%20más%20información%20de%20refrendación" target="_blank">Más información</a></button>
                 </div>
               </div>
             </div>
@@ -274,15 +295,15 @@
             <div class="card-wrapper">
               <div class="card-face front">
                 <div class="card-content">
-                  <div class="card-title">Traslado Matricula & Registro</div>
+                  <div class="card-title">Recategorización</div>
                 </div>
               </div>
               <div class="card-face back">
                 <div class="card-content">
                   <div class="card-description">
-                    Movemos tu registro vehicular de una ciudad a otra, de forma
-                    legal.
+                    Cambio de categoría en la licencia de conducir A2, B1, C1, C2
                   </div>
+                  <button class="btn cardbtn"><a href="https://wa.me/573116516129?text=Hola%20quiero%20más%20información%20de%20recategorización" target="_blank">Más información</a></button>
                 </div>
               </div>
             </div>
@@ -292,160 +313,24 @@
             <div class="card-wrapper">
               <div class="card-face front">
                 <div class="card-content">
-                  <div class="card-title">Radicado Matrícula</div>
+                  <div class="card-title">Cursos de conducción</div>
                 </div>
               </div>
               <div class="card-face back">
                 <div class="card-content">
                   <div class="card-description">
-                    Registramos tu vehículo en la ciudad donde circula
-                    habitualmente, cumpliendo con la normativa vigente.
+                    Capacitación teórica y práctica para aspirantes a licencia o conductores que necesiten mejorar habilidades.
                   </div>
+                  <button class="btn cardbtn"><a href="https://wa.me/573116516129?text=Hola%20quiero%20más%20información%20de%20cursos%20de%20conducción" target="_blank">Más información</a></button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="three-d-card">
-            <div class="card-wrapper">
-              <div class="card-face front">
-                <div class="card-content">
-                  <div class="card-title">Transformación</div>
-                </div>
-              </div>
-              <div class="card-face back">
-                <div class="card-content">
-                  <div class="card-description">
-                    (Cambio de combustible a gas, desmontaje de carrocería y
-                    desmonte de gas) solicitado por propietario.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="three-d-card">
-            <div class="card-wrapper">
-              <div class="card-face front">
-                <div class="card-content">
-                  <div class="card-title">Duplicado Licencia de Tránsito</div>
-                </div>
-              </div>
-              <div class="card-face back">
-                <div class="card-content">
-                  <div class="card-description">
-                    Duplicado de la última Licencia de Tránsito que posee el
-                    vehículo.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="three-d-card">
-            <div class="card-wrapper">
-              <div class="card-face front">
-                <div class="card-content">
-                  <div class="card-title">Inscripción Prenda</div>
-                </div>
-              </div>
-              <div class="card-face back">
-                <div class="card-content">
-                  <div class="card-description">
-                    Historial físico y electrónico del vehículo un contrato de
-                    prenda.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="three-d-card">
-            <div class="card-wrapper">
-              <div class="card-face front">
-                <div class="card-content">
-                  <div class="card-title">Matrícula & Registro</div>
-                </div>
-              </div>
-              <div class="card-face back">
-                <div class="card-content">
-                  <div class="card-description">
-                    Es la inscripción de un vehículo en plataforma runt y ciudad
-                    de tránsito.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="three-d-card">
-            <div class="card-wrapper">
-              <div class="card-face front">
-                <div class="card-content">
-                  <div class="card-title">Cambio de Color</div>
-                </div>
-              </div>
-              <div class="card-face back">
-                <div class="card-content">
-                  <div class="card-description">
-                    Gestión ante la autoridad correspondiente para actualizar
-                    los datos del vehículo en la tarjeta de circulación.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
     <!-- our feels section END -->
-    <!-- categories section START
-    <div class="categories section">
-      <div class="categories-title section-title">
-        <span class="span">Categories</span>
-        <h3>A lool At All Type Of Vehicles</h3>
-      </div>
-
-      <div class="swiper categories-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="categories-image">
-              <img src="./image/pic3.jpg" alt="" />
-              <span class="categories-text"> Hatchback </span>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="categories-image">
-              <img src="./image/pic6.jpg" alt="" />
-              <span class="categories-text"> Coupe </span>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="categories-image">
-              <img src="./image/pic8.jpg" alt="" />
-              <span class="categories-text"> Hybrid </span>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="categories-image">
-              <img src="./image/pic13.jpg" alt="" />
-              <span class="categories-text"> SUV </span>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="categories-image">
-              <img src="./image/pic8 (1).jpg" alt="" />
-              <span class="categories-text"> Sedan </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      categories section END -->
     <!-- working section START -->
     <div class="working section">
       <div class="working-title section-title">
@@ -484,102 +369,6 @@
       </div>
     </div>
     <!-- working section END -->
-    <!-- testimonials section START --
-    <div class="testimonials section">
-      <div class="testimonials-title section-title">
-        <span class="span">Testimonials</span>
-        <h3>What Our Customers Say</h3>
-      </div>
-      <div class="swiper tst-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="testimonials-item">
-              <div class="tst-top">
-                <img src="./image/pic1 (1).jpg" alt="" />
-                <h4>Kevin Martin <span>Customers</span></h4>
-              </div>
-              <p>
-                I Was Very Impresed Lorem posuere in miss and drana en the nisan
-                semere sceriun amiss etiam ornare in the miss drana is lorem
-                fermen mauris
-              </p>
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonials-item">
-              <div class="tst-top">
-                <img src="./image/pic2 (1).jpg" alt="" />
-                <h4>Devin Cullen <span>Customers</span></h4>
-              </div>
-              <p>
-                I Was Very Impresed Lorem posuere in miss and drana en the nisan
-                semere sceriun amiss etiam ornare in the miss drana is lorem
-                fermen mauris
-              </p>
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonials-item">
-              <div class="tst-top">
-                <img src="./image/pic3 (2).jpg" alt="" />
-                <h4>Piter Has <span>Customers</span></h4>
-              </div>
-              <p>
-                I Was Very Impresed Lorem posuere in miss and drana en the nisan
-                semere sceriun amiss etiam ornare in the miss drana is lorem
-                fermen mauris
-              </p>
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonials-item">
-              <div class="tst-top">
-                <img src="./image/pic1 (1).jpg" alt="" />
-                <h4>Kevin Martin <span>Customers</span></h4>
-              </div>
-              <p>
-                I Was Very Impresed Lorem posuere in miss and drana en the nisan
-                semere sceriun amiss etiam ornare in the miss drana is lorem
-                fermen mauris
-              </p>
-              <div class="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    !-- testimonials section END -->
-    <!-- blog section START --
     <div class="blog section">
       <div class="blog-title section-title">
         <span class="span">From the blog</span>
@@ -591,8 +380,7 @@
             <div class="blog-item">
               <img src="./image/bg1.jpg" alt="" />
               <div class="title">
-                <span>By Mike Hardson</span>
-                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
+                <h3>selecciona el logo de WhatsApp para atención personalizada</h3>
               </div>
             </div>
           </div>
@@ -601,10 +389,7 @@
             <div class="blog-item">
               <img src="./image/bg2.jpg" alt="" />
               <div class="title">
-                <span>By David Culum</span>
-                <h3>
-                  The Ultimate Checklist for a Successful Car Rental Adventure
-                </h3>
+                <h3>Revisa nuestros servicios y solicita información del servicio que te interese.</h3>
               </div>
             </div>
           </div>
@@ -613,10 +398,7 @@
             <div class="blog-item">
               <img src="./image/bg3.jpg" alt="" />
               <div class="title">
-                <span>By Mike Hardson</span>
-                <h3>
-                  Tips for Renting the Perfect Car for Your Family Vacation
-                </h3>
+                <h3>Te ayudamos a agendar citas y agilizar el tramite que requiera.</h3>
               </div>
             </div>
           </div>
@@ -625,8 +407,7 @@
             <div class="blog-item">
               <img src="./image/bg4.jpg" alt="" />
               <div class="title">
-                <span>By Mike Hardson</span>
-                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
+                <h3>Cada proceso es 100% legal y seguro.</h3>
               </div>
             </div>
           </div>
@@ -635,21 +416,11 @@
             <div class="blog-item">
               <img src="./image/bg5.jpg" alt="" />
               <div class="title">
-                <span>By Mike Hardson</span>
-                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
+                <h3>Evite retrasos en la obtención de sus documentos.</h3>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="blog-item">
-              <img src="./image/bg6.jpg" alt="" />
-              <div class="title">
-                <span>By Mike Hardson</span>
-                <h3>Your Perfect Memorial Day Weekend Getaway with Carntel</h3>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -660,39 +431,25 @@
         <div class="footer-left">
           <div class="flogo logo">
             <h2>
-              <a href="#"><span>Emp</span>resa</a>
+              <a href="#"><span>Drive</span>Bogotá</a>
             </h2>
           </div>
-          <p>
-            Nuestro equipo asesora con claridad y resuelve cada proceso de forma rápida y
-          sin complicaciones.
-          </p>
           <ul>
             <li>
               <i class="fa-solid fa-phone-volume"></i>
-              <span>123 034 0334</span>
+              <span>313 420 6149</span>
             </li>
             <li>
-              <i class="fa-solid fa-envelope"></i>
-              <span>correo@gmail.com</span>
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>311 651 6129</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>315 333 1291</span>
             </li>
             <li>
               <i class="fa-solid fa-house"></i>
-              <span>dirección</span>
-            </li>
-          </ul>
-          <ul class="social-icon">
-            <li>
-              <i class="fa-brands fa-x-twitter"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-facebook-f"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-pinterest-p"></i>
+              <span>Autopista Sur #54-55, Bogotá</span>
             </li>
           </ul>
         </div>
@@ -714,11 +471,17 @@
                 <li><a href="#contacto">Contacto</a></li>
               </ul>
             </div>
+            <div>            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9930828358033!2d-74.14219659999999!3d4.595260999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fdfc470f50f%3A0xbbd8713e6dbb6044!2sCEA%20El%20Agente%20Guerrero%20-%20Venecia!5e0!3m2!1ses-419!2sco!4v1755106881686!5m2!1ses-419!2sco"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
           </div>
         </div>
       </div>
     </footer>
     <div class="footer-bottom">
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/573116516129?" target="_blank"><img alt="icono WhatsApp" src="./image/logo-wsp.png" class="btn-wsp" id="respuesta"/>
+            <i class="icon-whatsapp"></i>
+        </a>
       <p>copyrights All Rights Reserved by <span>Programadores57</span></p>
     </div>
     <!-- footer section END -->

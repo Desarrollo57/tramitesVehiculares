@@ -76,3 +76,27 @@ var swiper = new Swiper('.blog-swiper',{
         }
     }
 });
+// capturar datos del formulario
+const nombre = document.querySelector('#nombre-cliente').value;
+const opcion = document.querySelector('#opcion').value;
+const btnEnviar = document.querySelector('#btn-enviar').value;
+const telefono = 573116516129;
+
+//crear funcion usando los inputs
+function enviarMensaje(){
+    var telefono = 573116516129;
+    var nombre = document.querySelector('#nombre-cliente').value;
+    var opcion = document.querySelector('#opcion').value;
+    var url = "https://wa.me/" + telefono + "?text=Hola mi nombre es: " + nombre + " requiero mas información de: " + opcion;
+
+// Validar que los campos no estén vacíos
+    if (!nombre || !opcion) {
+        alert("Por favor, completa todos los campos.");
+        return;
+    }
+
+    window.open(url, '_blank').focus();
+
+    //var mensaje = `https://api.whatsapp.com/send?phone=573116516129&text=Hola mi nombre es: ${nombre.value}`;
+    btnEnviar.href = mensaje;
+}
