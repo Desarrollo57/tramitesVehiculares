@@ -73,6 +73,9 @@ var swiper = new Swiper('.blog-swiper',{
         },
         500:{
             slidesPerView:1,
+        },
+        100:{
+            slidesPerView:1,
         }
     }
 });
