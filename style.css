@@ -1548,3 +1548,46 @@ footer {
     width: 53vw;    
   }
 }
+@media screen and (max-width: 400px) {
+  .nav-right li:nth-child(1) {
+    display: none;
+  }
+  .hero-mercedes::after {
+    display: none;
+  }
+  .input-head {
+    flex-direction: column;
+  }
+  #text {
+    font-size: 3.5rem;
+  }
+  .hero-left h2 {
+    font-size: 3rem;
+  }
+  .title-text {
+    left: -8%;
+  }
+  .hero-mercedes {
+    height: 200px;
+  }
+  .hero-right img {
+    width: 400px;
+  }
+  .about-title h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .about-image {
+    width: 100%;
+    height: 80%;
+  }
+  .working-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-col div {
+    flex-direction: column;
+  }
+  .flogo {
+    width: 53vw;    
+  }
+}
