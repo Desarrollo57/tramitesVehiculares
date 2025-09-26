@@ -1187,6 +1187,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 3%;
 }
 .footer-left ul li i {
   font-size: 1rem;
@@ -1518,7 +1519,7 @@ footer {
     font-size: 3.5rem;
   }
   .hero-left h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .title-text {
     left: -8%;
