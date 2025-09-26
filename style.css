@@ -190,8 +190,8 @@
 .hero-left h2 {
   padding-top: 30px;
   font-size: 4.5rem;
-  font-weight: 700;
-  line-height: 5.5rem;
+  font-weight: 600;
+  line-height: 4.5rem;
 }
 .hero-left h2 span {
   color: var(--color-primary);
